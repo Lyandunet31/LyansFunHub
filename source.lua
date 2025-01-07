@@ -38,6 +38,15 @@ Tabs.Troll:AddButton({
     end
 })
 
+Tabs.Troll:AddButton({
+    Title = "Kawaii aura",
+    Description = "wtf",
+    Callback = function()
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-AURA/main/kawaii_aura.lua", true))()
+        end)        
+    end
+})
 Tabs.Main:AddButton({
     Title = "Infinite yield fe",
     Description = "inf yield",
@@ -87,8 +96,13 @@ Tabs.Troll:AddButton({
     end
 })
 
-
-
+Tabs.Main:AddButton({
+    Title = "Susmic's black hole gui",
+    Description = "veri col gui",
+    Callback = function()   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Lyandunet31/LyansFunHub/refs/heads/main/customshit/susmicsblackholegui.lua",true))()
+    end
+})
 local Dropdown = Tabs.Settings:AddDropdown("theme", {
     Title = "Theme",
     Description = "The theme of the hub",
