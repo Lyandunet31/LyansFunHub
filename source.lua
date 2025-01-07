@@ -12,8 +12,8 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "lucide-house" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" },)
-    Troll = Window:AddTab({ Title = "Troll shit", Icon = "house" },)
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    Troll = Window:AddTab({ Title = "Troll shit", Icon = "house" }),
 }
 
 
