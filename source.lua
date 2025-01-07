@@ -12,7 +12,8 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "lucide-house" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" },)
+    Troll = Window:AddTab({ Title = "Troll shit", Icon = "house" },
 }
 
 
@@ -29,11 +30,11 @@ end
 })
 
 
-Tabs.Main:AddButton({
+Tabs.Troll:AddButton({
     Title = "Buttfuck gui (fling)",
     Description = "fling gui",
     Callback = function()
-
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Lyandunet31/LyansFunHub/refs/heads/main/customshit/buttfuckgui.lua",true))()
     end
 })
 
@@ -54,7 +55,22 @@ Tabs.Main:AddButton({
     end
 })
 
+Tabs.Main:AddButton({
+    Title = "Ch hub",
+    Description = "bababoi",
+    Callback = function()   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackingProject/CHHub/main/CHHub.lua"))()
+    end
+})
 
+
+Tabs.Main:AddButton({
+    Title = "Unanchored gui",
+    Description = "veri col gui",
+    Callback = function()   
+        loadstring(game:HttpGet("https://pastebin.com/raw/WkZwcGjf", true))()
+    end
+})
 Tabs.Main:AddButton({
     Title = "CMD X",
     Description = "CMD X",
@@ -62,6 +78,15 @@ Tabs.Main:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
     end
 })
+
+Tabs.Troll:AddButton({
+    Title = "Usercreation",
+    Description = "Chat bypass hub (key is slammed)",
+    Callback = function()   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/UserCreation.lua", true))()
+    end
+})
+
 
 
 local Dropdown = Tabs.Settings:AddDropdown("theme", {
