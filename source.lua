@@ -12,8 +12,9 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "lucide-house" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
     Troll = Window:AddTab({ Title = "Troll shit", Icon = "house" }),
+    info = Window:AddTab({ Title = "Info", Icon = "info" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }), 
 }
 
 
@@ -102,6 +103,10 @@ Tabs.Main:AddButton({
     Callback = function()   
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lyandunet31/LyansFunHub/refs/heads/main/customshit/susmicsblackholegui.lua",true))()
     end
+})
+Tabs.info:AddParagraph({
+    Title = "We have a premium version",
+    Content = "You can get the premium version in Our discord server .gg/4R9qssyQbb"
 })
 local Dropdown = Tabs.Settings:AddDropdown("theme", {
     Title = "Theme",
