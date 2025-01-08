@@ -108,6 +108,11 @@ Tabs.info:AddParagraph({
     Title = "We have a premium version",
     Content = "You can get the premium version in Our discord server .gg/4R9qssyQbb"
 })
+
+Tabs.info:AddParagraph({
+    Title = "Free version discontinued",
+    Content = "The free version will not have big updates and op scripts update to premium to get early acces to scripts or for big updates"
+})
 local Dropdown = Tabs.Settings:AddDropdown("theme", {
     Title = "Theme",
     Description = "The theme of the hub",
